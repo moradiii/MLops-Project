@@ -28,11 +28,13 @@ Given a set of customer-related features (e.g. tenure, service usage, contract t
 ---
 
 ## Dataset Source
-The project uses the **Telco Customer Churn dataset**.
 
-- Source: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
-- Data type: tabular dataset
-- Target variable: `Churn`
+The project uses a Telco Customer Churn dataset provided in YAML format.
+
+- Source: [https://github.com/Anas-kh3/telco-churn-dataset](https://github.com/Anas-kh3/telco-churn-dataset/tree/main)
+- Data type: YAML structured dataset
+- Target variable: `churn`
+
 
 ---
 
@@ -80,4 +82,5 @@ This project is developed collaboratively by:
 ### Environment Setup
 ```bash
 uv sync
+
 
