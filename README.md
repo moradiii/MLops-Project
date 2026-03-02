@@ -59,6 +59,7 @@ The project uses a Telco Customer Churn dataset provided in YAML format.
 - REST API endpoint for churn prediction
 - Containerization for reproducible execution
 - Basic API testing
+- Current status is checkpoint 3- Completed.
 
 ### Checkpoint 4 – Monitoring & Final Report
 - Basic monitoring strategies for the ML system
@@ -82,5 +83,6 @@ This project is developed collaboratively by:
 ### Environment Setup
 ```bash
 uv sync
+
 
 
