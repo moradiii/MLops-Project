@@ -82,7 +82,98 @@ This project is developed collaboratively by:
 
 ### Environment Setup
 ```bash
-uv sync
+uv sync```
+
+## System Architecture
+The project follows a modular MLOps architecture that separates data processing, model training, experiment tracking, and model serving.
+
+Main components:
+
+1. **Data Layer**
+   - YAML dataset containing customer churn information
+   - Data loading and preprocessing scripts
+
+2. **Training Pipeline**
+   - Model training implemented in the `src` module
+   - Feature processing and model fitting
+   - Reproducible training pipeline
+
+3. **Experiment Tracking**
+   - Experiments tracked using MLflow
+   - Parameters, metrics, and model artifacts logged for each run
+
+4. **Model Storage**
+   - Trained models stored in the `models` directory
+   - Versioning supported through MLflow artifacts
+
+5. **Model Serving**
+   - Inference API built with FastAPI
+   - REST endpoint `/predict` for churn predictions
+
+6. **Containerization**
+   - Docker used to create a portable and reproducible runtime environment
+
+This architecture ensures modularity, reproducibility, and maintainability of the ML system.
+---
+
+## Monitoring & Reliability
+
+Monitoring is an important part of an MLOps system to ensure that deployed models operate correctly.
+
+In this project, basic monitoring capabilities were implemented in the inference service.
+
+### Health Monitoring
+
+A health check endpoint is implemented in the FastAPI service:
 
 
+```bash
+GET /health
+
+This endpoint returns the status of the API and allows external systems to verify that the service is running correctly.
+
+Example response:
+
+```json
+{
+  "status": "ok"
+}
+
+
+### Logging
+
+Logging is implemented within the prediction API to monitor model usage and behavior.
+
+The system logs:
+- Incoming prediction requests
+- Predicted churn probabilities
+
+These logs help developers monitor the system, debug issues, and understand how the model is being used in production.
+
+Together, these monitoring features improve the reliability and observability of the deployed machine learning service.
+
+---
+
+## Limitations & Future Work
+
+Although the current system demonstrates a complete MLOps pipeline, several improvements could be made in the future.
+
+### Current Limitations
+
+- Monitoring is limited to basic logging and health checks.
+- The system does not currently implement automated model retraining.
+- Advanced production monitoring such as data drift detection is not implemented.
+- Performance benchmarking and load testing of the API are limited.
+
+### Future Improvements
+
+Future work could include:
+
+- Implementing automated CI/CD pipelines for model deployment
+- Adding advanced monitoring tools such as Prometheus or Grafana
+- Implementing data drift detection and model performance monitoring
+- Adding automated retraining pipelines when model performance decreases
+- Scaling the API using container orchestration platforms such as Kubernetes
+
+These improvements would make the system more robust and production-ready.
 
