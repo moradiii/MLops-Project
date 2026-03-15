@@ -1,0 +1,12 @@
+2026-03-15 16:02:06,385 - INFO - Path=/docs Method=GET Status=200 Duration=0.0000s
+2026-03-15 16:02:06,473 - INFO - Path=/openapi.json Method=GET Status=200 Duration=0.0090s
+2026-03-15 16:02:23,857 - INFO - Path=/health Method=GET Status=200 Duration=0.0030s
+2026-03-15 16:02:26,485 - INFO - Path=/health Method=GET Status=200 Duration=0.0010s
+2026-03-15 16:02:27,196 - INFO - Path=/health Method=GET Status=200 Duration=0.0010s
+2026-03-15 16:02:50,258 - INFO - Path=/metrics Method=GET Status=200 Duration=0.0010s
+2026-03-15 16:02:51,779 - INFO - Path=/metrics Method=GET Status=200 Duration=0.0010s
+2026-03-15 16:02:53,117 - INFO - Path=/metrics Method=GET Status=200 Duration=0.0009s
+2026-03-15 16:03:12,896 - ERROR - Prediction failed: columns are missing: {'recruit_year_month', 'total_bill', 'duration_month', 'acquisition_channel', 'cancel_year_month', 'sub_offer', 'fiber_or_adsl', 'offer'}
+2026-03-15 16:03:12,897 - INFO - Path=/predict Method=POST Status=500 Duration=0.0102s
+2026-03-15 16:03:36,229 - INFO - Path=/health Method=GET Status=200 Duration=0.0005s
+2026-03-15 16:03:46,879 - INFO - Path=/metrics Method=GET Status=200 Duration=0.0010s
