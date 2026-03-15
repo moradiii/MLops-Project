@@ -82,7 +82,8 @@ This project is developed collaboratively by:
 
 ### Environment Setup
 ```bash
-uv sync```
+uv sync
+```
 
 ## System Architecture
 The project follows a modular MLOps architecture that separates data processing, model training, experiment tracking, and model serving.
@@ -129,6 +130,8 @@ A health check endpoint is implemented in the FastAPI service:
 
 ```bash
 GET /health
+```
+
 
 This endpoint returns the status of the API and allows external systems to verify that the service is running correctly.
 
@@ -138,8 +141,7 @@ Example response:
 {
   "status": "ok"
 }
-
-
+```
 ### Logging
 
 Logging is implemented within the prediction API to monitor model usage and behavior.
@@ -151,8 +153,6 @@ The system logs:
 These logs help developers monitor the system, debug issues, and understand how the model is being used in production.
 
 Together, these monitoring features improve the reliability and observability of the deployed machine learning service.
-
----
 
 ## Limitations & Future Work
 
