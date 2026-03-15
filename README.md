@@ -1,6 +1,7 @@
 # MLOps Project – Customer Churn Prediction
 
 ## Project Description
+
 This project focuses on the implementation of an end-to-end **MLOps pipeline** for a customer churn prediction use case.
 
 The goal is to apply MLOps principles across the entire machine learning lifecycle, including data handling, model training, experiment tracking, reproducibility, model serving, and monitoring.  
@@ -11,6 +12,7 @@ The project is developed incrementally following the different checkpoints of th
 ---
 
 ## Project Topic
+
 **Customer Churn Prediction**
 
 Customer churn prediction aims to identify customers who are likely to stop using a service.  
@@ -19,9 +21,11 @@ This problem is commonly addressed using machine learning models trained on cust
 ---
 
 ## Task Definition
+
 This is a **binary classification** problem.
 
 Given a set of customer-related features (e.g. tenure, service usage, contract type, and billing information), the model predicts whether a customer will:
+
 - Churn (leave the service), or
 - Not churn (remain a customer)
 
@@ -35,12 +39,12 @@ The project uses a Telco Customer Churn dataset provided in YAML format.
 - Data type: YAML structured dataset
 - Target variable: `churn`
 
-
 ---
 
 ## Project Scope & Planned Work
 
 ### Checkpoint 1 – Project Setup & Foundations
+
 - GitHub repository setup and collaboration
 - Python environment management using **UV**
 - Modular project structure
@@ -49,12 +53,14 @@ The project uses a Telco Customer Churn dataset provided in YAML format.
 - Reproducible setup using `pyproject.toml` and `uv.lock`
 
 ### Checkpoint 2 – Code Quality & Experiment Tracking
+
 - Unit testing with `pytest`
 - Code quality and formatting tools
 - Experiment tracking using **MLflow**
 - Logging of model parameters, metrics, and artifacts
 
 ### Checkpoint 3 – Model Serving
+
 - Model inference service using **FastAPI**
 - REST API endpoint for churn prediction
 - Containerization for reproducible execution
@@ -62,6 +68,7 @@ The project uses a Telco Customer Churn dataset provided in YAML format.
 - Current status is checkpoint 3- Completed.
 
 ### Checkpoint 4 – Monitoring & Final Report
+
 - Basic monitoring strategies for the ML system
 - Logging and health checks
 - Analysis of limitations and future improvements
@@ -70,8 +77,10 @@ The project uses a Telco Customer Churn dataset provided in YAML format.
 ---
 
 ## Team
+
 This project is developed collaboratively by:
-- Mourad Mahmoudi  
+
+- Mourad Mahmoudi
 - Anas Khalil
 - Miral Jandial
 - Pradeep Kumar Reddy Yarragangireddy
@@ -81,8 +90,10 @@ This project is developed collaboratively by:
 ## How to Run the Project
 
 ### Environment Setup
+
 ```bash
 uv sync
 
 
 
+```
